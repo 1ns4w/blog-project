@@ -1,3 +1,4 @@
+  
 <!DOCTYPE html>
 <html>
 <head>
@@ -48,21 +49,16 @@ body {
 <body>
 
 <div class="header">
-  <h2>Angel's Blog</h2>
-  <p>I swear this is not a template</p>
+  <h2>Tomi's Blog</h2>
 </div>
 
 <div class="row">
   <div class="leftcolumn">
-    {% for post in posts reversed %}
     <div class="card">
-      <a style="text-decoration: none; color: black;" href="/post/{{post.id}}">
-        <h2>{{post.title}}</h2>
+        <h1>{{post.title}}</h1>
         <h5>{{post.created_at}}</h5>
-        <p>{{post.body|truncatewords:6}}</p>
-      </a>
+        <p>{{post.body}}</p>
     </div>
-    {% endfor %}
   </div>
 </div>
 
